@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e66a10a1-9144-46f0-8664-d41b17e523f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/InventoryManagementApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/controller/InventoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/model/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/repository/InventoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/service/InventoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/service/InventoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/src/test/java/com/example/inventorymanagement/InventoryManagementApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/OrderServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/model/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/payload/OrderItemsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/payload/OrderItemsResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/payload/OrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/payload/OrderResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/service/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/test/java/com/wilfred/order/orderservice/OrderServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/ProductManagementApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/payload/ProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/payload/ProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/test/java/com/wilfred/product/productmanagement/ProductManagementApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MI1xIVwU6pYn6pG3ylBhEsKWtN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Wilfred/Documents/Workspace/Microservices/Order System/eOrderMicroservice/InventoryService",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\InventoryService" />
+      <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\OrderService" />
+      <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\ProductService" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProductManagementApplication">
+    <configuration name="InventoryManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="InventoryService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.inventorymanagement.InventoryManagementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="OrderService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wilfred.order.orderservice.OrderServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ProductService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wilfred.product.productmanagement.ProductManagementApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wilfred.product.productmanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ProductManagementApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e66a10a1-9144-46f0-8664-d41b17e523f7" name="Changes" comment="" />
+      <created>1677440531073</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677440531073</updated>
+      <workItem from="1677440533519" duration="1300000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
