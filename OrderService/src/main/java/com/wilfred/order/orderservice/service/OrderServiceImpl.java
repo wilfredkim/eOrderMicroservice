@@ -1,5 +1,6 @@
 package com.wilfred.order.orderservice.service;
 
+import com.wilfred.order.orderservice.config.WebConfig;
 import com.wilfred.order.orderservice.model.Order;
 import com.wilfred.order.orderservice.model.OrderItem;
 import com.wilfred.order.orderservice.payload.OrderItemsRequest;
@@ -10,6 +11,7 @@ import com.wilfred.order.orderservice.repository.OrderRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import java.util.List;
 import java.util.UUID;
@@ -19,6 +21,7 @@ import java.util.UUID;
 @Transactional
 public class OrderServiceImpl implements OrderService {
     private final OrderRepository orderRepository;
+    private final WebClient webClient;
 
     @Override
     public Order placeAnOrder(OrderRequest orderRequest) {
@@ -27,7 +30,14 @@ public class OrderServiceImpl implements OrderService {
                 stream().map(this::mapToOrderItemsDto).toList();
         order.setOrderItems(orderItemList);
         order.setOrderNumber(UUID.randomUUID().toString());
-        return orderRepository.save(order);
+        List<String> orderLineItemsSkucode = order.getOrderItems().stream().map(OrderItem::getSkuCode).toList();
+
+        //call inventory service
+        Boolean aBoolean = webClient.get().uri("http://localhost:1012/api/v1/inventories",
+                uriBuilder -> uriBuilder.queryParam("skuCode", orderLineItemsSkucode).
+                        build()).retrieve().bodyToMono(boolean.class).block();
+        if (Boolean.TRUE.equals(aBoolean)) return orderRepository.save(order);
+        else throw new IllegalArgumentException("Product Not in stock, please try again!");
     }
 
     private OrderItem mapToOrderItemsDto(OrderItemsRequest orderItemsRequest) {

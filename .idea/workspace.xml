@@ -5,62 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e66a10a1-9144-46f0-8664-d41b17e523f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryService/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/InventoryManagementApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/controller/InventoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/model/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/repository/InventoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/service/InventoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/service/InventoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryService/src/test/java/com/example/inventorymanagement/InventoryManagementApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/OrderServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/model/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/payload/OrderItemsRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/payload/OrderItemsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/payload/OrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/payload/OrderResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/service/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/test/java/com/wilfred/order/orderservice/OrderServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/ProductManagementApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/payload/ProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/payload/ProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/service/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/test/java/com/wilfred/product/productmanagement/ProductManagementApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/payload/InventoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/controller/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/service/InventoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/service/InventoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/service/InventoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/service/OrderServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,13 +40,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/Wilfred/Documents/Workspace/Microservices/Order System/eOrderMicroservice/InventoryService",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "3d38090b85ad5782fe490542a0de0367"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -141,7 +110,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677440531073</updated>
-      <workItem from="1677440533519" duration="1300000" />
+      <workItem from="1677440533519" duration="1672000" />
+      <workItem from="1677525464560" duration="1659000" />
     </task>
     <servers />
   </component>
