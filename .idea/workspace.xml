@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e66a10a1-9144-46f0-8664-d41b17e523f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DiscoveryServer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DiscoveryServer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/java/com/wilfred/discoveryserver/DiscoveryServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiscoveryServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/InventoryManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/InventoryManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/OrderServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/service/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/ProductManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/ProductManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,22 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Wilfred/Documents/Workspace/Microservices/Order System/eOrderMicroservice/InventoryService&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;3d38090b85ad5782fe490542a0de0367&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Wilfred/Documents/Workspace/Microservices/Order System/eOrderMicroservice/InventoryService",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "f882c33fae2243b221ac263695fc8b98"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\InventoryService" />
@@ -128,6 +132,7 @@
       <workItem from="1677440533519" duration="1672000" />
       <workItem from="1677525464560" duration="2062000" />
       <workItem from="1677612537337" duration="2515000" />
+      <workItem from="1677698329278" duration="3246000" />
     </task>
     <servers />
   </component>

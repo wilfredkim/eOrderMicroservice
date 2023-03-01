@@ -33,7 +33,7 @@ public class OrderServiceImpl implements OrderService {
         List<String> orderLineItemsSkucode = order.getOrderItems().stream().map(OrderItem::getSkuCode).toList();
 
         //call inventory service
-        Boolean aBoolean = webClient.get().uri("http://localhost:1012/api/v1/inventories",
+        Boolean aBoolean = webClient.get().uri("http://INVENTORY-SERVICE/api/v1/inventories",
                 uriBuilder -> uriBuilder.queryParam("skuCode", orderLineItemsSkucode).
                         build()).retrieve().bodyToMono(boolean.class).block();
         if (Boolean.TRUE.equals(aBoolean)) return orderRepository.save(order);

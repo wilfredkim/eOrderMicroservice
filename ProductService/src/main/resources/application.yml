@@ -3,6 +3,8 @@ server:
 
 
 spring:
+  application:
+    name: PRODUCT-SERVICE
   data:
     mongodb:
       uri:

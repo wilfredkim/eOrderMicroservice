@@ -1,6 +1,8 @@
 server:
   port: 1012
 spring:
+  application:
+    name: INVENTORY-SERVICE
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/inventory-service
@@ -9,4 +11,6 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+
+
 

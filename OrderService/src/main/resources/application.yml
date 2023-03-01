@@ -1,6 +1,8 @@
 server:
   port: 1011
 spring:
+  application:
+    name: ORDER-SERVICE
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/orders

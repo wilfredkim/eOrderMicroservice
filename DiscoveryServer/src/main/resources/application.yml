@@ -1,5 +1,5 @@
 server:
-  port: 1015
+  port: 8671
 
 eureka:
   instance:
@@ -7,4 +7,4 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
-    serviceUrl.defaultZone: http://eurekaserver:8761/eureka
+    serviceUrl.defaultZone: http://localhost:8761/eureka
