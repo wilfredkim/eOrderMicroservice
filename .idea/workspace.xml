@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e66a10a1-9144-46f0-8664-d41b17e523f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/APIGateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APIGateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APIGateway/src/main/java/com/wilfred/apigateway/APIGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APIGateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APIGateway/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APIGateway/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiscoveryServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/InventoryManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/example/inventorymanagement/InventoryManagementApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InventoryService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/OrderServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/service/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/ProductManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/wilfred/product/productmanagement/ProductManagementApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProductService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/Wilfred/Documents/Workspace/Microservices/Order System/eOrderMicroservice/InventoryService",
+    "last_opened_file_path": "C:/Users/Wilfred/Documents/Workspace/Microservices/Order System/eOrderMicroservice",
     "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "f882c33fae2243b221ac263695fc8b98"
   }
@@ -73,7 +73,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DiscoveryServer">
+  <component name="RunManager" selected="Spring Boot.APIGatewayApplication">
+    <configuration name="APIGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="APIGateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wilfred.apigateway.APIGatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wilfred.apigateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiscoveryServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="DiscoveryServer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wilfred.discoveryserver.DiscoveryServer" />
@@ -116,6 +129,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.APIGatewayApplication" />
         <item itemvalue="Spring Boot.DiscoveryServer" />
         <item itemvalue="Spring Boot.ProductManagementApplication" />
       </list>
@@ -132,7 +146,9 @@
       <workItem from="1677440533519" duration="1672000" />
       <workItem from="1677525464560" duration="2062000" />
       <workItem from="1677612537337" duration="2515000" />
-      <workItem from="1677698329278" duration="3246000" />
+      <workItem from="1677698329278" duration="3721000" />
+      <workItem from="1677785081219" duration="1492000" />
+      <workItem from="1677787003776" duration="1825000" />
     </task>
     <servers />
   </component>

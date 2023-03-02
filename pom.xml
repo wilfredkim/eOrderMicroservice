@@ -10,6 +10,7 @@
     <module>OrderService</module>
     <module>InventoryService</module>
       <module>DiscoveryServer</module>
+    <module>APIGateway</module>
   </modules>
   <name>eOrderMicroservice</name>
   <url>http://maven.apache.org</url>
