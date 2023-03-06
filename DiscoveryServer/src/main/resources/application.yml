@@ -1,11 +1,13 @@
 eureka:
+  username: admin
+  password: Adm!n123$
   instance:
     hostname: localhost
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka:password@localhost:8761/eureka
 
 server:
   port: 8761
