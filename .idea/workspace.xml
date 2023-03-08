@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e66a10a1-9144-46f0-8664-d41b17e523f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/APIGateway/src/main/java/com/wilfred/apigateway/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/java/com/wilfred/discoveryserver/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APIGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APIGateway/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APIGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/APIGateway/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DiscoveryServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProductService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +69,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.APIGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
     <configuration name="APIGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="APIGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wilfred.apigateway.APIGatewayApplication" />
@@ -152,6 +147,8 @@
       <workItem from="1677787003776" duration="2050000" />
       <workItem from="1678006430616" duration="10894000" />
       <workItem from="1678130097096" duration="3611000" />
+      <workItem from="1678218860475" duration="1749000" />
+      <workItem from="1678302347973" duration="1535000" />
     </task>
     <servers />
   </component>
