@@ -1,5 +1,6 @@
 package com.wilfred.order.orderservice.service;
 
+import com.wilfred.order.orderservice.events.OrderKafkaEvent;
 import com.wilfred.order.orderservice.model.Order;
 import com.wilfred.order.orderservice.model.OrderItem;
 import com.wilfred.order.orderservice.payload.OrderItemsRequest;
@@ -11,6 +12,7 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cloud.sleuth.Span;
 import org.springframework.cloud.sleuth.Tracer;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -23,8 +25,8 @@ import java.util.UUID;
 public class OrderServiceImpl implements OrderService {
     private final OrderRepository orderRepository;
     private final WebClient webClient;
-
     private final Tracer tracer;
+    private final KafkaTemplate<String, OrderKafkaEvent> kafkaTemplate;
 
     @Override
     public Order placeAnOrder(OrderRequest orderRequest) {
@@ -41,8 +43,12 @@ public class OrderServiceImpl implements OrderService {
             Boolean aBoolean = webClient.get().uri("http://INVENTORY-SERVICE/api/v1/inventories",
                     uriBuilder -> uriBuilder.queryParam("skuCode", orderLineItemsSkucode).
                             build()).retrieve().bodyToMono(boolean.class).block();
-            if (Boolean.TRUE.equals(aBoolean)) return orderRepository.save(order);
-            else throw new IllegalArgumentException("Product Not in stock, please try again!");
+            if (Boolean.TRUE.equals(aBoolean)) {
+                Order save = orderRepository.save(order);
+                kafkaTemplate.send("notificationTopic", new OrderKafkaEvent(save.getOrderNumber()));
+
+                return save;
+            } else throw new IllegalArgumentException("Product Not in stock, please try again!");
         } finally {
             inventoryServiceLookup.end();
         }

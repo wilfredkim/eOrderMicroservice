@@ -11,6 +11,7 @@
     <module>InventoryService</module>
       <module>DiscoveryServer</module>
     <module>APIGateway</module>
+      <module>NotificationService</module>
   </modules>
   <name>eOrderMicroservice</name>
   <url>http://maven.apache.org</url>
@@ -25,6 +26,7 @@
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <spring-cloud.version>2022.0.1</spring-cloud.version>
+    <java.version>17</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
