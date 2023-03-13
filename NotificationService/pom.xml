@@ -8,7 +8,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.wilfred.notificationservice</groupId>
-    <artifactId>NotificationService</artifactId>
+    <artifactId>notification-service</artifactId>
     <name>NotificationService</name>
     <description>Notification Service</description>
     <packaging>jar</packaging>

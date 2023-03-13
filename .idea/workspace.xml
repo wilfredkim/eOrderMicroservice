@@ -5,11 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e66a10a1-9144-46f0-8664-d41b17e523f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NotificationService/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APIGateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APIGateway/Dockerfile.layered" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryServer/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryServer/Dockerfile.layered" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryService/Dockerfile.layered" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NotificationService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NotificationService/Dockerfile.layered" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/Dockerfile.layered" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/Dockerfile.layered" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APIGateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiscoveryServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NotificationService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NotificationService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NotificationService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/NotificationService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/src/main/resources/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,18 +63,21 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/Wilfred/Documents/Workspace/Microservices/Order System/eOrderMicroservice/NotificationService/src/main",
+    "last_opened_file_path": "C:/Users/Wilfred/Documents/Workspace/Microservices/Order System/eOrderMicroservice/ProductService",
     "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "f7d0ae7e91519bb1147fcb5ae25936c8"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\NotificationService\src\main" />
-      <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\NotificationService\src\main\resources" />
-      <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\InventoryService" />
-      <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\OrderService" />
       <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\ProductService" />
+      <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\OrderService" />
+      <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\NotificationService" />
+      <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\InventoryService" />
+      <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\DiscoveryServer" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\OrderService" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -158,6 +176,7 @@
       <workItem from="1678302347973" duration="2436000" />
       <workItem from="1678387674248" duration="4545000" />
       <workItem from="1678621977279" duration="4508000" />
+      <workItem from="1678734748226" duration="3722000" />
     </task>
     <servers />
   </component>

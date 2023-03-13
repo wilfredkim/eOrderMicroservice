@@ -7,7 +7,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.wilfred.order</groupId>
-  <artifactId>OrderService</artifactId>
+  <artifactId>order-service</artifactId>
   <packaging>war</packaging>
   <name>OrderService</name>
   <url>http://maven.apache.org</url>
