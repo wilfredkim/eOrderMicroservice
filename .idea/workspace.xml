@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e66a10a1-9144-46f0-8664-d41b17e523f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationService/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationService/src/main/java/com/wilfred/notificationservice/NotificationServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationService/src/main/java/com/wilfred/notificationservice/event/OrderKafkaEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationService/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/events/OrderKafkaEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/resources/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NotificationService/src/main/resources/banner.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/wilfred/order/orderservice/service/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotificationService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NotificationService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotificationService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/NotificationService/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,13 +48,14 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/Wilfred/Documents/Workspace/Microservices/Order System/eOrderMicroservice/NotificationService/src/main/resources",
+    "last_opened_file_path": "C:/Users/Wilfred/Documents/Workspace/Microservices/Order System/eOrderMicroservice/NotificationService/src/main",
     "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "ba66ea97cea90e1559a3317ee0ba7af9"
+    "spring.configuration.checksum": "f7d0ae7e91519bb1147fcb5ae25936c8"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\NotificationService\src\main" />
       <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\NotificationService\src\main\resources" />
       <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\InventoryService" />
       <recent name="C:\Users\Wilfred\Documents\Workspace\Microservices\Order System\eOrderMicroservice\OrderService" />
@@ -139,8 +132,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.APIGatewayApplication" />
         <item itemvalue="Spring Boot.DiscoveryServer" />
+        <item itemvalue="Spring Boot.APIGatewayApplication" />
         <item itemvalue="Spring Boot.ProductManagementApplication" />
       </list>
     </recent_temporary>
@@ -163,11 +156,15 @@
       <workItem from="1678130097096" duration="3611000" />
       <workItem from="1678218860475" duration="1749000" />
       <workItem from="1678302347973" duration="2436000" />
-      <workItem from="1678387674248" duration="4236000" />
+      <workItem from="1678387674248" duration="4545000" />
+      <workItem from="1678621977279" duration="4508000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/eOrderMicroservice$NotificationServiceApplication.ic" NAME="NotificationServiceApplication Coverage Results" MODIFIED="1678626998028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
