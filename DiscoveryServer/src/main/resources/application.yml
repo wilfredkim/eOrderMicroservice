@@ -21,6 +21,12 @@ spring:
     compatibility-verifier:
       enabled: false
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
+
 
 
 

@@ -74,6 +74,10 @@
                     </from>
                     <to>
                         <image>registry.hub.docker.com/wilfredkim5/${artifactId}</image>
+                       <auth>
+                            <username>***</username>
+                            <password>*******</password>
+                        </auth>
                     </to>
                 </configuration>
             </plugin>
