@@ -3,55 +3,61 @@ package com.wilfred.order.orderservice.service;
 import com.wilfred.order.orderservice.events.OrderKafkaEvent;
 import com.wilfred.order.orderservice.model.Order;
 import com.wilfred.order.orderservice.model.OrderItem;
-import com.wilfred.order.orderservice.payload.OrderItemsRequest;
-import com.wilfred.order.orderservice.payload.OrderItemsResponse;
-import com.wilfred.order.orderservice.payload.OrderRequest;
-import com.wilfred.order.orderservice.payload.OrderResponse;
+import com.wilfred.order.orderservice.payload.*;
 import com.wilfred.order.orderservice.repository.OrderRepository;
+import io.micrometer.observation.Observation;
+import io.micrometer.observation.ObservationRegistry;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.springframework.cloud.sleuth.Span;
-import org.springframework.cloud.sleuth.Tracer;
+
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
 @Transactional
+@Slf4j
 public class OrderServiceImpl implements OrderService {
     private final OrderRepository orderRepository;
-    private final WebClient webClient;
-    private final Tracer tracer;
+    private final WebClient.Builder webClientBuilder;
+    private final ObservationRegistry observationRegistry;
+
     private final KafkaTemplate<String, OrderKafkaEvent> kafkaTemplate;
 
     @Override
     public Order placeAnOrder(OrderRequest orderRequest) {
+        log.info("Placing an order >>>>>>>>>>>>>>.");
         Order order = new Order();
         List<OrderItem> orderItemList = orderRequest.getOrderItemsRequests().
                 stream().map(this::mapToOrderItemsDto).toList();
         order.setOrderItems(orderItemList);
         order.setOrderNumber(UUID.randomUUID().toString());
         List<String> orderLineItemsSkucode = order.getOrderItems().stream().map(OrderItem::getSkuCode).toList();
+        Observation inventoryServiceObservation = Observation.createNotStarted("inventory-service-lookup",
+                this.observationRegistry);
+        inventoryServiceObservation.lowCardinalityKeyValue("call", "inventory-service");
+        return inventoryServiceObservation.observe(() -> {
+            InventoryResponse[] inventoryResponses = webClientBuilder.build().get()
+                    .uri("http://inventory-service/api/inventory",
+                            uriBuilder -> uriBuilder.queryParam("skuCode", orderLineItemsSkucode).build())
+                    .retrieve()
+                    .bodyToMono(InventoryResponse[].class)
+                    .block();
 
-        Span inventoryServiceLookup = tracer.nextSpan().name("InventoryServiceLookup");
-        try (Tracer.SpanInScope ignored = tracer.withSpan(inventoryServiceLookup.start())) {
-            //call inventory service
-            Boolean aBoolean = webClient.get().uri("http://INVENTORY-SERVICE/api/v1/inventories",
-                    uriBuilder -> uriBuilder.queryParam("skuCode", orderLineItemsSkucode).
-                            build()).retrieve().bodyToMono(boolean.class).block();
+            assert inventoryResponses != null;
+            boolean aBoolean = Arrays.stream(inventoryResponses).allMatch(InventoryResponse::isInStock);
             if (Boolean.TRUE.equals(aBoolean)) {
                 Order save = orderRepository.save(order);
                 kafkaTemplate.send("notificationTopic", new OrderKafkaEvent(save.getOrderNumber()));
-
                 return save;
             } else throw new IllegalArgumentException("Product Not in stock, please try again!");
-        } finally {
-            inventoryServiceLookup.end();
-        }
+        });
 
 
     }

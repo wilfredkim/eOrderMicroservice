@@ -9,8 +9,7 @@ eureka:
     service-url:
       defaultZone: http://eureka:password@localhost:8761/eureka
 
-server:
-  port: 8761
+
 spring:
   zipkin:
     base-url: http://localhost:9411
@@ -27,6 +26,10 @@ management:
       exposure:
         include: prometheus
 
+
+
+server:
+  port: 8761
 
 
 
