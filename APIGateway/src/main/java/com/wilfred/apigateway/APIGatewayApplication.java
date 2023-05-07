@@ -11,3 +11,6 @@ public class APIGatewayApplication {
         SpringApplication.run(APIGatewayApplication.class, args);
     }
 }
+
+
+//http://localhost:6501/realms/spring-boot-microservice-reallm

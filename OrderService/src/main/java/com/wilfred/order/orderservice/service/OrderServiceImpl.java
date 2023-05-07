@@ -33,6 +33,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public Order placeAnOrder(OrderRequest orderRequest) {
         log.info("Placing an order >>>>>>>>>>>>>>.");
+        log.info("orderRequest>>>>>>>>>>>>>>>>> "+orderRequest.toString());
         Order order = new Order();
         List<OrderItem> orderItemList = orderRequest.getOrderItemsRequests().
                 stream().map(this::mapToOrderItemsDto).toList();

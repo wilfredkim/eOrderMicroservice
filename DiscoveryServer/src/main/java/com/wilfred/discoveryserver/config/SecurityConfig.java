@@ -10,12 +10,18 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
+import static org.springframework.security.config.Customizer.withDefaults;
+import static org.springframework.security.web.util.matcher.AntPathRequestMatcher.antMatcher;
+import static org.springframework.security.web.util.matcher.RegexRequestMatcher.regexMatcher;
+
 @Configuration
-//@EnableWebSecurity
+@EnableWebSecurity
 public class SecurityConfig {
     @Value("${eureka.username}")
     private String username;
@@ -26,17 +32,38 @@ public class SecurityConfig {
     @Bean
     public InMemoryUserDetailsManager userDetailsManager() {
         UserDetails userDetails = User.withDefaultPasswordEncoder().username(username).
-                password(password).roles("ADMIN").build();
+                password(password).authorities("USER").build();
         return new InMemoryUserDetailsManager(userDetails);
     }
 
     @Bean
+    public UserDetailsService userDetailsService() {
+        InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
+        manager.createUser(User.withUsername(username)
+                .password(password)
+                .roles("USER")
+                .build());
+        return manager;
+    }
+
+    @Bean
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
-        return http.csrf().disable()
-                .authorizeRequests().anyRequest()
+        /*return http.csrf().disable()
+                .authorizeRequests()
+                .anyRequest()
                 .authenticated()
                 .and()
                 .httpBasic().and().build();
+*/
+        http
+                .securityMatcher(antMatcher("/api/**"))
+                .authorizeHttpRequests(authorize -> authorize
+                        .requestMatchers(antMatcher("/user/**")).hasRole("USER")
+                        .requestMatchers(regexMatcher("/admin/.*")).hasRole("ADMIN")
+                        .anyRequest().authenticated()
+                )
+                .formLogin(withDefaults());
+        return http.build();
     }
 
 
